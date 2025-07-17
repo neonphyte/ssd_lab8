@@ -6,4 +6,6 @@ app.use(express.static('public'));
 
 app.listen(port, () => {
   console.log(`App running at http://localhost:${port}`);
+  const expression = '1 + 1';
+  eval(`console.log(${expression})`); 
 });
